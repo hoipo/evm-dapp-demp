@@ -1,3 +1,17 @@
+/* 引入Tailwind的基础样式 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 测试自定义类 */
+@layer components {
+  .test-tailwind {
+    @apply bg-blue-500 text-white p-4 rounded;
+  }
+}
+
+/* 你可以在这里添加自定义的全局样式 */
+
 html,
 body {
   padding: 0;
